@@ -160,7 +160,7 @@ $('#popover').popover({
     content: '<p class="guide">Click Player\'s Rock/Scissors/Paper. ' +
 			'Your get points when you win a round against computer. Points are increased by streak amount. ' +
 			'Streak increases when you win. Streak is cleared when you lose. ' + 
-			'You lose live when you lose a round. Game ends when all lives are gone.</p>' +
+			'You lose life when you lose a round. Game ends when all lives are gone.</p>' +
 			'<p class="guide">Game is saved automatically after each round and loaded when you launch the game. ' +
 			'High scores are also updated to the game service.</p>',
     placement: 'top',
