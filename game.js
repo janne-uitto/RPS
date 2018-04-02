@@ -78,7 +78,6 @@ window.addEventListener("message", function(evt) {
 $(".playerButton").click( function() {
 
 	// Rock wins Scissors wins Paper wins Rock
-	//var rpsNames = ["Rock","Scissors","Paper"];
 	var comp = Math.floor((Math.random() * 3));
 	
 	$(".playerButton").removeClass("btn-info");
@@ -126,6 +125,7 @@ function updateStatus(resultText) {
 	$("#score").text(points);
 	$("#result").text(resultText);
 	showLives();
+	saveStatus();
 }
 
 function showLives() {
