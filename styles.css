@@ -1,15 +1,56 @@
 #guide, div {
-	text-align: center;
+    text-align: center;
 }
 
 button {
-	margin: 5px 0 0 0;
+    margin: 5px 0 0 0;
+}
+
+.blue {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.red {
+    background-color: rgba( 255, 0, 0, 0.8 );
+}
+
+.green {
+    background-color: rgb( 0, 200, 0 );
+}
+
+.yellow {
+    background-color: rgb( 255, 255, 0 );
+}
+
+.gray {
+    background-color: rgb( 180, 180, 180 );
+}
+
+.compSelection {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#resultDiv {
+    width: 150px;
+}
+
+#compSelections {
+    margin-top: 10px;
+}
+
+#result {
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
 }
 
 #over {
+    display: none;
     background-color: rgba( 200, 200, 200, 0.8 );
     position: fixed;
-    margin: -8px;
     z-index: 1000;
     width: 100%;
     height: 100%;
@@ -19,13 +60,13 @@ button {
 }
 
 #over > p {
-	background-color: #bbb;
-	padding: 5px;
-	top: 50%;
-	position: relative;
+    background-color: #bbb;
+    padding: 5px;
+    top: 50%;
+    position: relative;
 }
 
 #over > button {
-	top: 50%;
-	position: relative;
+    top: 50%;
+    position: relative;
 }
