@@ -59,11 +59,11 @@ function loadRequest() {
 window.addEventListener("message", function(evt) {
     if(evt.data.messageType === "LOAD")
     {
-        streak = evt.data.gameState.streak;
+        streak = evt.data.gameState.streak ? evt.data.gameState.streak : streak;
         $("#streak").text(streak);
-        lives = evt.data.gameState.lives;
+        lives = evt.data.gameState.lives ? evt.data.gameState.lives : lives;
         showLives();
-        points = evt.data.gameState.score;
+        points = evt.data.gameState.score ? evt.data.gameState.score : points;
         $("#score").text(points);
     }
     else if(evt.data.messageType === "ERROR")
